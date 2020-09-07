@@ -1,0 +1,27 @@
+<doctype! html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="ass">s</p>
+        <p></p>
+    <input type="text" id="input" onkeyup="inputGetter.theFunction()" onkeydown="if(event.keycode == 13){theJunction()};">
+
+        <script>
+          var inputGetter = { 
+              theFunction: function(){
+                           let rawInput = document.getElementById("input").value;
+                         //  console.log(rawInput); 
+                           return rawInput;
+                            }
+                        }
+                        console.log(inputGetter.theFunction())
+            function theJunction (){
+                
+            }
+           
+        </script>
+    </body>
+</html>
