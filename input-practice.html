@@ -5,19 +5,19 @@
     </head>
 
     <body>
-        <p id="ass">s</p>
+        <p id="no">s</p>
         <p></p>
     <input type="text" id="input" onkeyup="inputGetter.theFunction()" onkeydown="if(event.keycode == 13){theJunction()};">
 
         <script>
           var inputGetter = { 
-              theFunction: function(){
+              theFunction: () =>{
                            let rawInput = document.getElementById("input").value;
                          //  console.log(rawInput); 
-                           return rawInput;
-                            }
+                           let arrInput = rawInput.trim().split(" ");
+                           return arrInput;}
                         }
-                        console.log(inputGetter.theFunction())
+                      
             function theJunction (){
                 
             }
